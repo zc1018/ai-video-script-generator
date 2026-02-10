@@ -227,6 +227,13 @@ For questions or issues:
 
 ## Version History
 
+### v0.2.0 (2026-02-10)
+- **Major Enhancement**: Integrated brainstorming workflow
+- Added Phase 0: Brainstorming (required before script generation)
+- Improved creative exploration and requirement refinement
+- Enhanced narrative design through collaborative ideation
+- Updated workflow summary to include brainstorming step
+
 ### v0.1.0 (2026-02-10)
 - Initial release
 - Core workflow implementation

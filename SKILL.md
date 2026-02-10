@@ -1,7 +1,7 @@
 ---
 name: ai-video-script-generator
 description: This skill should be used when the user asks to "生成视频脚本", "创建视频提示词", "AI视频分段", "视频剧本", "分镜脚本", "generate video script", "create video prompts", "segment video", or "video storyboard". Generates time-segmented prompts for AI video tools (Runway, Pika, 即梦) with character consistency and narrative coherence.
-version: 0.1.0
+version: 0.2.0
 ---
 
 # AI Video Script Generator
@@ -21,6 +21,19 @@ Trigger this skill when the user needs:
 - Social media video scripts (TikTok, Instagram, YouTube Shorts)
 
 ## Core Workflow
+
+**IMPORTANT**: Before starting the workflow, use the `superpowers:brainstorming` skill to explore the user's creative vision, refine requirements, and design the narrative approach. This is a creative task that requires collaborative ideation.
+
+### Phase 0: Brainstorming (Required)
+
+Invoke `superpowers:brainstorming` skill to:
+- Understand the user's creative vision and intent
+- Explore different narrative approaches and styles
+- Clarify character personalities and relationships
+- Discuss emotional beats and story arcs
+- Validate technical requirements and constraints
+
+After brainstorming, proceed with the structured workflow below.
 
 ### Phase 1: Gather Requirements
 
@@ -221,6 +234,7 @@ Complete working examples:
 
 ## Workflow Summary
 
+0. **Brainstorming** (Required) → Use `superpowers:brainstorming` to explore creative vision and refine requirements
 1. **Gather Requirements** → Characters, story, technical specs, references
 2. **Define Characters** → Detailed costume specifications for consistency
 3. **Structure Narrative** → Calculate segments, design three-act structure

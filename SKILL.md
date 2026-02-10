@@ -1,6 +1,6 @@
 ---
 name: ai-video-script-generator
-description: This skill should be used when the user asks to "生成视频脚本", "创建视频提示词", "AI视频分段", "视频剧本", "分镜脚本", "生成Prompt", or wants to create segmented video prompts for AI video generation tools (Runway, Pika, 即梦, etc.). Ensures character consistency, costume uniformity, and narrative coherence across all video segments.
+description: This skill should be used when the user asks to "生成视频脚本", "创建视频提示词", "AI视频分段", "视频剧本", "分镜脚本", "generate video script", "create video prompts", "segment video", or "video storyboard". Generates time-segmented prompts for AI video tools (Runway, Pika, 即梦) with character consistency and narrative coherence.
 version: 0.1.0
 ---
 
@@ -12,7 +12,7 @@ Generate segmented video prompts for AI video generation tools with guaranteed c
 
 ## When to Use This Skill
 
-Use this skill when the user needs:
+Trigger this skill when the user needs:
 - Segmented video prompts for AI video generation
 - Character-consistent video scripts across multiple segments
 - Detailed costume and appearance specifications
@@ -94,6 +94,8 @@ For each segment, define:
 - Transition to next segment
 
 ### Phase 4: Generate Segmented Prompts
+
+For detailed prompt patterns, camera angles, and emotional keywords, consult `references/prompt-patterns.md`.
 
 For each segment, create structured prompts with:
 
@@ -184,25 +186,25 @@ Tailor content for target platforms:
 
 ## Chinese Prompt Best Practices
 
-When generating Chinese prompts for tools like 即梦:
+For detailed Chinese prompt techniques, consult `references/prompt-patterns.md`.
 
-1. **Use specific, concrete descriptions**: "深蓝色飞行员制服" not "制服"
-2. **Specify camera angles clearly**: 全景/中景/近景/特写/远景
-3. **Include emotional keywords**: 温馨/搞笑/紧张/兴奋/感动
-4. **Describe lighting and atmosphere**: 明亮的/柔和的/金色阳光/黄昏时分
-5. **Use action verbs**: 走来/跑过来/转身/蹲下来/抬头看
+Key points:
+- Use specific colors: "深蓝色飞行员制服" not "制服"
+- Specify camera angles: 全景/中景/近景/特写/远景
+- Include emotional keywords: 温馨/搞笑/紧张/兴奋
+- Describe lighting: 明亮的/柔和的/金色阳光
+- Use action verbs: 走来/跑过来/转身/蹲下来
 
 ## Common Pitfalls to Avoid
 
-❌ **Vague costume descriptions**: "穿着制服" → ✅ "深蓝色飞行员制服外套，白色衬衫，深蓝色领带，金色肩章"
+For comprehensive pitfall patterns, see `references/prompt-patterns.md`.
 
-❌ **Inconsistent character definitions**: Different descriptions across segments → ✅ Copy exact specifications to every segment
-
-❌ **Missing time breakdowns**: Only full segment description → ✅ Break into 3-second intervals with specific actions
-
-❌ **Weak narrative structure**: Random scenes → ✅ Clear three-act structure with emotional progression
-
-❌ **Generic scene descriptions**: "在机场" → ✅ "明亮的现代机场航站楼大厅，自然光透过大玻璃窗洒进来"
+Critical mistakes:
+- ❌ Vague costumes → ✅ Detailed specifications with exact colors
+- ❌ Inconsistent definitions → ✅ Copy exact specs to every segment
+- ❌ Missing time breakdowns → ✅ Break into 3-second intervals
+- ❌ Weak narrative → ✅ Clear three-act structure
+- ❌ Generic scenes → ✅ Detailed atmosphere and lighting
 
 ## Additional Resources
 
